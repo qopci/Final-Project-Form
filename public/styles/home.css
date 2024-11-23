@@ -1,0 +1,304 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(243, 252, 188);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+#form-container, #submit-container{
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 30px;
+    border: 1px solid rgb(239, 239, 239);
+    border-radius: 10px;
+    padding: 20px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#form-container h1, #submit-container h2, h2 {
+    color: red;
+    text-align: center;
+    animation: colorChange 7s infinite;
+}
+
+h3 {
+    color: red;
+    text-align: center;
+    animation: colorChange 7s infinite;
+}
+
+/* Transition for color change text header */
+@keyframes colorChange {
+    0% {
+        color: red; /* Start color */
+    }
+    50% {
+        color: rgb(219, 124, 0); /* Intermediate color */
+    }
+    100% {
+        color: green; /* Final color */
+    }
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+}
+
+input[type="text"], input[type="email"], textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.experience-options {
+    margin-top: 10px;
+}
+
+input[type="radio"] {
+    margin-right: 10px;
+}
+
+button[type="submit"] {
+    background-color: green;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* transition */
+}
+
+/* Button hover effect */
+button[type="submit"]:hover {
+    background-color: #45a049; 
+    transform: scale(1.05); 
+}
+
+label[for="suggestions"] {
+    margin-top: 20px; 
+    color: green;
+}
+
+textarea {
+    resize: none;
+}
+
+/* COMPUTER SCREEN (DESKTOP) */
+@media only screen and (min-width: 401px) {
+    #form-container {
+        width: 400px;
+    }
+}
+
+/* MOBILE */
+@media only screen and (max-width: 400px) {
+    #form-container {
+        width: 300px;
+    }  
+}
+
+/* submit.ejs styling */
+#submit-container {
+    width: 30%;
+    height: 680px;
+}
+
+body#submit-page {
+    background-color: rgb(188, 252, 222);
+}
+
+#submit-container h2 {
+    text-align: center;
+}
+
+#submit-container p {
+    margin-top: 35px;
+}
+
+.blue-text {
+    color: rgb(0, 113, 183);
+    font-weight: lighter; 
+}
+
+#emotion-img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    width: 70%;
+}
+
+.button {
+    display: block;
+    padding: 10px 20px;
+    margin-top: 20px;
+    background-color: #007e17; 
+    color: white; 
+    text-align: center;
+    text-decoration: none; 
+    border-radius: 5px; 
+    font-size: 14px; 
+    transition: background-color 0.3s, transform 0.3s; /* Smooth hover effect */
+}
+
+.button:hover {
+    background-color: #0cb300; 
+    transform: translateY(-3px); /* Lift effect on hover */
+}
+
+/* COMPUTER SCREEN (DESKTOP) */
+@media only screen and (min-width: 401px) {
+    #submit-container {
+        width: 400px;  /* Set fixed width for larger screens */
+    }
+}
+
+/* MOBILE */
+@media only screen and (max-width: 400px) {
+    #submit-container {
+        width: 90%; /* Adjust the width for mobile */
+    }
+}
+
+/* feedback.ejs styling */
+body#feedback-page {
+    background-color: #e6dbcb;
+}
+
+#customer-feedback {
+    height: 600px;
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    margin: 0 auto;
+    width: 100%;  
+    border-spacing: 0;
+}
+
+#customer-feedback h2 {
+    text-align: center;
+}
+
+#customer-feedback p {
+    margin-top: 35px;
+}
+
+#customer-feedback td, #customer-feedback th {
+    border: 1px solid #111;
+    padding: 8px; 
+    font-size: 12px; 
+    text-align: center;
+    word-wrap: break-word; 
+    white-space: normal; 
+}
+
+#customer-feedback tr:nth-child(even) {
+    background-color: #78bece;
+}
+
+#customer-feedback tr:hover {
+    background-color: #2a9d8f;
+}
+
+#customer-feedback th {
+    padding: 12px;
+    text-align: center;
+    background-color: #264653;
+    color: white;
+}
+
+/* Default styling for mobile title (hidden on larger screens) */
+#mobile-entries-title {
+    display: none; 
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+#home-button {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%; 
+    padding: 10px 20px;
+    margin-top: 20px;
+    background-color: #2a9d8f;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: background-color 0.3s, transform 0.3s; /* Smooth hover effect */
+}
+
+#home-button:hover {
+    background-color: #1a655c;
+    transform: translateY(-3px); /* Lift effect on hover */
+}
+
+/* COMPUTER SCREEN (DESKTOP) */
+@media only screen and (min-width: 401px) {
+    #submit-container {
+        width: 400px;  /* Set fixed width for larger screens */
+    }
+}
+
+/* MOBILE */
+@media only screen and (max-width: 400px) {
+    #submit-container {
+        width: 90%; /* Adjust the width for mobile */
+    }
+}
+
+/* Mobile (Phone & Small Tablets) */
+@media only screen and (max-width: 600px) {
+    #mobile-entries-title {
+        display: block;  
+        font-size: 18px;  
+        font-weight: bold;
+        text-align: center; 
+        margin-bottom: 10px; 
+    }
+
+    #customer-feedback {
+        width: 100%;  
+        padding: 0;  
+        margin: 0;    
+    }
+
+    /* Make table cells stack vertically on mobile */
+    #customer-feedback td, #customer-feedback th {
+        display: block;  
+        width: 100%;     
+        box-sizing: border-box;  
+        text-align: left;  
+        padding: 10px;     
+    }
+
+    #customer-feedback td {
+        border: none;
+        border-bottom: 1px solid #ddd; 
+    }
+
+    /* Optional: Reduce font size for mobile */
+    #customer-feedback td, #customer-feedback th {
+        font-size: 14px;
+    }
+
+    /* Display headers inside cells as labels */
+    #customer-feedback td::before {
+        content: attr(data-label); 
+        font-weight: bold;
+        display: inline-block;
+        margin-bottom: 5px;
+    }
+}

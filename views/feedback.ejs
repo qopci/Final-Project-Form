@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/home.css">
+    <title>All Feedback</title>
+    <link rel="icon" type="image/png" href="/images/survey_icon.png?v=1"> <!-- Favicon -->
+</head>
+<body id="feedback-page">
+    <h2>Feedback Entries</h2>
+    <!-- TABLE with Entry Data -->
+    <table border="1" id="customer-feedback">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Email</th>
+                <th>Experience</th>
+                <th>Suggestions</th>
+                <th>Submitted Time</th>
+            </tr>
+        </thead>
+        <tbody>
+            <% feedbacks.forEach(feedback => { %>
+                <tr>
+                    <td><%= feedback.id %></td>
+                    <td><%= feedback.fname %></td>
+                    <td><%= feedback.lname %></td>
+                    <td><%= feedback.email %></td>
+                    <td><%= feedback.experience %></td>
+                    <td><%= feedback.suggestions %></td>
+                    <td><%= feedback.timestamp %></td>
+                </tr>
+            <% }) %>
+        </tbody>
+    </table>
+    <a href="/" id="home-button">Back to Home Page</a> <!-- Lead back to home page -->
+</body>
+</html>
