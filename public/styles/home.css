@@ -26,12 +26,6 @@ body {
     animation: colorChange 7s infinite;
 }
 
-h3 {
-    color: red;
-    text-align: center;
-    animation: colorChange 7s infinite;
-}
-
 /* Transition for color change text header */
 @keyframes colorChange {
     0% {
